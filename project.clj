@@ -1,4 +1,5 @@
 (defproject clj-swing "0.1.0-SNAPSHOT"
+  :main "clj-swing.core"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
