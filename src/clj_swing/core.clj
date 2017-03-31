@@ -7,7 +7,7 @@
       (proxy [java.awt.event.ActionListener] []
         (actionPerformed [~event] ~@body))))
 
-(defn show-dialog [frame]
+(defn show-dialog []
   (JOptionPane/showMessageDialog nil "Hello World"))
 
 (defn -main []
@@ -20,7 +20,7 @@
   (.add panel button)
   (doto button 
     (on-action event 
-               (show-dialog frame)))
+               (show-dialog)))
   (.revalidate button)
   (while 1))
 
